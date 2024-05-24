@@ -1,6 +1,6 @@
 ## Question 1
 What will be printed after interrupting the thread?
-```
+```java
 public static class SleepThread extends Thread {
     public void run() {
         try {
@@ -20,7 +20,7 @@ public static void main(String[] args) {
 }
 ```
 ### Answer:
-```
+```java
 Thread was interrupted!
 Thread will be finished here!!!
 ```
@@ -28,7 +28,7 @@ first the try part happens then it's intrupted and we have the first sentence an
 
 ## Question 2
 In Java, what would be the outcome if the run() method of a Runnable object is invoked directly, without initiating it inside a Thread object?
-```
+```java
 public class DirectRunnable implements Runnable {
     public void run() {
         System.out.println("Running in: " + Thread.currentThread().getName());
@@ -43,14 +43,14 @@ public class Main {
 }
 ```
 ### Answer:
-```
+```java
 Running in: Main
 ```
 there is no thread object created so our current thread would be main which is the root thread of all threads and that's the name that'll be printed.
 
 ## Question 3
 Elaborate on the sequence of events that occur when the join() method of a thread (let's call it Thread_0) is invoked within the Main() method of a Java program.
-```
+```java
 public class JoinThread extends Thread {
     public void run() {
         System.out.println("Running in: " + Thread.currentThread().getName());
@@ -71,7 +71,7 @@ public class Main {
 }
 ```
 ### Answer
-```
+```java
 Running in: Thread_0
 Running in: Main
 ```
