@@ -4,7 +4,6 @@ import java.util.List;
 
 public class MatrixMultiplication {
 
-    // You are allowed to change all code in the BlockMultiplier class
     public static class BlockMultiplier implements Runnable
     {
         List<List<Integer>> tempMatrixProduct;
