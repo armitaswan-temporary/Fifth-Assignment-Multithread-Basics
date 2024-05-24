@@ -5,10 +5,8 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class TaskScheduler
-{
-    public static class Task implements Runnable
-    {
+public class TaskScheduler {
+    public static class Task implements Runnable {
         /*
             ------------------------- You don't need to modify this part of the code -------------------------
          */
@@ -38,8 +36,7 @@ public class TaskScheduler
         }
     }
 
-    public static ArrayList<String> doTasks(ArrayList<Task> tasks)
-    {
+    public static ArrayList<String> doTasks(ArrayList<Task> tasks) {
         ArrayList<String> finishedTasks = new ArrayList<>();
 
         /*
